@@ -11,7 +11,12 @@ namespace LinkedList
         {
             start = null;
         }
-        // CS
+
+
+
+
+        // This will traverse and display all elements in a LinkedList. If the list is empty it will return that, if it's not
+        // the loop will execute until p.link = null;
         public void DisplayList()
         {
             Node p;
@@ -30,6 +35,7 @@ namespace LinkedList
             Console.WriteLine();
         }
 
+        // This will return the number of nodes in the list. 
         public void CountNodes()
         {
             int n = 0;
@@ -41,6 +47,8 @@ namespace LinkedList
             }
             Console.WriteLine("Number of nodes in the list = " + n);
         }
+
+        // This will search through the LinkedList for a specific value (x) and return true or false
         public bool Search(int x)
         {
             int position = 1;
